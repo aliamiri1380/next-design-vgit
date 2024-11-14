@@ -1,5 +1,16 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+
+NextDesign is a Next.js and React.js library with ready to use component built on top of nextui and taiwindcss to make web development easier
+Building footer, header, sidebar with just a simple import and declaration
+
+## Features:
+- Easy to use
+- fast
+- focus more on your backend development
+
+
+
 ## Getting Started
 
 First, run the development server:
