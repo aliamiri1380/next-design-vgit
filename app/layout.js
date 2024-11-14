@@ -11,11 +11,16 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" dir='rtl' className=''>
+    <html lang="en" dir='rtl' className='dark'>
       <body>
         <div id='container'>
           {children}
-          {/* <Footer /> */}
+          <Footer items={[
+            { 'url': '/', 'name': 'home' },
+            { 'url': '/search', 'name': 'search-alt' },
+            { 'url': '/checkout', 'name': 'shopping-bag' },
+            { 'url': '/my', 'name': 'user' },
+          ]} />
         </div>
       </body>
     </html>

@@ -110,6 +110,36 @@
 .max-w-mobile
     max-width: 500px
 
+
+.xshadow-wrapper
+    position: relative
+    overflow: hidden
+
+.scroll-container
+    scrollbar-width: none
+    -ms-overflow-style: none
+    overflow-x: auto
+    position: relative
+
+.xshadow-wrapper::before,
+.xshadow-wrapper::after
+    content: ''
+    position: absolute
+    top: 0
+    bottom: 0
+    width: 20px
+    pointer-events: none
+    z-index: 1
+
+.xshadow-wrapper::before
+    left: 0
+    background: linear-gradient(to right, rgba(#fff, 1), transparent)
+
+.xshadow-wrapper::after
+    right: 0
+    background: linear-gradient(to left, rgba(#fff, 1), transparent)
+
+
 #container
     width: 500px
     height: 100%
@@ -398,3 +428,9 @@ div[data-rsbs-overlay="true"]
             background: #222
         div[data-rsbs-header="true"]::before
             background-color: #eee
+
+    .xshadow-wrapper::before
+        background: linear-gradient(to right, rgba(0, 0, 0, 1), transparent)
+
+    .xshadow-wrapper::after
+        background: linear-gradient(to left, rgba(0, 0, 0, 1), transparent)

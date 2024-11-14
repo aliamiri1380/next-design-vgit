@@ -19,6 +19,11 @@ export default (props) => {
 					</a>
 				</Badge>
 				)}
+				<Badge>
+					<Button onClick={() => document.querySelector('html').classList.toggle("dark")} size={props.size ?? 'sm'} isIconOnly radius="full">
+						<i className={`bx bx-sun bx-${props.size ?? 'sm'}`}></i>
+					</Button>
+				</Badge>
 			</div>
 		</footer>
 	);

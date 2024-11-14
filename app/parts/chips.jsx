@@ -1,13 +1,14 @@
 import {Chip} from "@nextui-org/chip";
 import Circle from "./circle";
-import {ScrollShadow} from "@nextui-org/scroll-shadow";
+// import {ScrollShadow} from "@nextui-org/scroll-shadow";
 import Button from './button'
+import ScrollShadow from './xscroll_shadow'
 
 
 export default (props) => {
   return (
-    <ScrollShadow hideScrollBar orientation="horizontal" className="w-full" dir="rtl">
-        <div className="flex gap-3 items-center w-fit px-4" dir="rtl">
+    <ScrollShadow >
+        <div className="flex gap-3 items-center w-fit px-4">
           {props.items.map((r,i) => (
               <div className="py-3 flex justify-start items-center">
                 <a href={r.url}>
