@@ -6,8 +6,9 @@ Building footer, header, sidebar with just a simple import and declaration
 
 ## Features:
 - Easy to use
-- fast
-- focus more on your backend development
+- Fast
+- Focus more on your backend development
+- Neat and editable code Structure
 
 
 
