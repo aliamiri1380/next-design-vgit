@@ -1,0 +1,400 @@
+@font-face
+    font-family: YekanBakh
+    font-style: normal
+    font-weight: 100
+    src: url(./fonts/YekanBakh//woff/YekanBakhFaNum-thin.woff) format('woff'),url(./fonts/YekanBakh//woff2/YekanBakhFaNum-thin.woff2) format('woff2')
+
+@font-face
+    font-family: YekanBakh
+    font-style: normal
+    font-weight: 300
+    src: url(./fonts/YekanBakh//woff/YekanBakhFaNum-Light.woff) format('woff'),url(./fonts/YekanBakh//woff2/YekanBakhFaNum-Light.woff2) format('woff')
+
+@font-face
+    font-family: YekanBakh
+    font-style: normal
+    font-weight: normal
+    src: url(./fonts/YekanBakh//woff/YekanBakhFaNum-Regular.woff) format('woff'),url(./fonts/YekanBakh//woff2/YekanBakhFaNum-Regular.woff2) format('woff2')
+
+@font-face
+    font-family: YekanBakh
+    font-style: normal
+    font-weight: 600
+    src: url(./fonts/YekanBakh//woff/YekanBakhFaNum-SemiBold.woff) format('woff'),url(./fonts/YekanBakh//woff2/YekanBakhFaNum-SemiBold.woff2) format('woff2')
+
+@font-face
+    font-family: YekanBakh
+    font-style: normal
+    font-weight: bold
+    src: url(./fonts/YekanBakh//woff/YekanBakhFaNum-Bold.woff) format('woff'),url(./fonts/YekanBakh//woff2/YekanBakhFaNum-Bold.woff2) format('woff')
+
+@font-face
+    font-family: YekanBakh
+    font-style: normal
+    font-weight: 800
+    src: url(./fonts/YekanBakh//woff/YekanBakhFaNum-ExtraBold.woff) format('woff'),url(./fonts/YekanBakh//woff2/YekanBakhFaNum-ExtraBold.woff2) format('woff2')
+
+@font-face
+    font-family: YekanBakh
+    font-style: normal
+    font-weight: 900
+    src: url(./fonts/YekanBakh//woff/YekanBakhFaNum-Black.woff) format('woff'),url(./fonts/YekanBakh//woff2/YekanBakhFaNum-Black.woff2) format('woff2')
+
+@font-face
+    font-family: YekanBakh
+    font-style: normal
+    font-weight: 950
+    src: url(./fonts/YekanBakh//woff/YekanBakhFaNum-ExtraBlack.woff) format('woff'),url(./fonts/YekanBakh//woff2/YekanBakhFaNum-ExtraBlack.woff2) format('woff2')
+
+*
+    -webkit-tap-highlight-color: transparent
+    -webkit-touch-callout: none
+    -webkit-user-select: none
+    -khtml-user-select: none
+    -moz-user-select: none
+    -ms-user-select: none
+    user-select: none
+    font-family: YekanBakh
+
+// .two-line-text
+//     display: -webkit-box
+//     -webkit-line-clamp: 2
+//     -webkit-box-orient: vertical
+//     overflow: hidden
+//     display: box
+//     line-height: 22px
+//     text-overflow: ellipsis
+//     direction: rtl
+
+.color1
+    color: #FFBE98
+.bg1
+    background-color: rgba(#FFBE98, .15) !important
+.color2
+    color: #F05A7E
+.bg2
+    background-color: rgba(#F05A7E, .15)
+.color3
+    color: #125B9A
+.bg3
+    background-color: rgba(#125B9A, .15)
+.color4
+    color: #0B8494
+.bg4
+    background-color: rgba(#0B8494, .15)
+.color5
+    color: #7695FF
+.bg5
+    background-color: rgba(#7695FF, .15)
+.color6
+    color: #FF9874
+.bg6
+    background-color: rgba(#FF9874, .15)
+.color7
+    color: #1230AE
+.bg7
+    background-color: rgba(#1230AE, .15)
+.color8
+    color: #BF2EF0
+.bg8
+    background-color: rgba(#BF2EF0, .15)
+.color9
+    color: #4379F2
+.bg9
+    background-color: rgba(#4379F2, .15)
+.color10
+    color: #00CCDD
+.bg10
+    background-color: rgba(#00CCDD, .15)
+
+.max-w-mobile
+    max-width: 500px
+
+#container
+    width: 500px
+    height: 100%
+    min-height: 100vh
+    max-width: 100%
+    overflow-x: hidden
+    // background: linear-gradient(180deg, rgba(227, 229, 253, 1), #fff,)
+    margin: 0 auto
+    &:has(#footer-actions)
+        padding-bottom: 4pc
+
+.profile-header-animation
+    clip-path: ellipse(86% 0px at 45% 0px)
+    opacity: 0
+    animation: profile-header 2s forwards
+    animation-delay: 1s
+    animation-timing-function: ease-out
+
+@keyframes profile-header
+    from
+        opacity: 0
+        clip-path: ellipse(86% 0px at 45% 0px)
+    to
+        opacity: 1
+        clip-path: ellipse(86% 110px at 50% 78px)
+
+*:has(> .blob)
+    position: relative
+    // overflow: hidden
+.perspective-container
+    perspective: 400px
+    .perspective
+        transform: rotateY(-45deg)
+.blob
+    filter: blur(50px)
+
+.card-details
+    position: relative
+    display: inline-block
+    padding-left: 20px
+    font-size: 12px
+    transform: translateY(3px)
+    &::before
+        content: ''
+        height: 4px
+        width: 4px
+        background-color: #aaa
+        position: absolute
+        top: 37%
+        left: 8px
+        border-radius: 99px
+    &:nth-last-child(1)
+        &::before
+            display: none
+
+.blob:nth-child(1)
+    position: absolute
+    top: -2pc
+    right: -2pc
+    background: #1ddddd
+    width: 150px
+    height: 150px
+    border-radius: 100%
+    &::before
+        content: ''
+        position: absolute
+        bottom: -2pc
+        right: calc(60%)
+        background: deeppink
+        width: 100px
+        height: 100px
+        border-radius: 100%
+    &::after
+        content: ''
+        position: absolute
+        top: -2pc
+        right: 150%
+        background: #6439FF
+        width: 100px
+        height: 100px
+        border-radius: 100%
+.blob:nth-child(2)
+    position: absolute
+    top: -2pc
+    left: -2pc
+    background: #E2BBE9
+    width: 150px
+    height: 150px
+    border-radius: 100%
+    &::before
+        content: ''
+        position: absolute
+        bottom: -2pc
+        left: calc(60%)
+        background: #40A2E3
+        width: 100px
+        height: 100px
+        border-radius: 100%
+    &::after
+        content: ''
+        position: absolute
+        bottom: -2pc
+        left: 150%
+        background: #C5FFF8
+        width: 100px
+        height: 100px
+        border-radius: 100%
+
+.swipper
+    &,.react-swipeable-view-container
+        direction: ltr !important
+        // transition: transform 0.35s cubic-bezier(0.15, 0.3, 0.25, 1) 0s !important
+    div[data-swipeable="true"]
+        overflow: hidden !important
+
+.skew-icon-wrap
+    & > button, & > span
+        border-radius: 46%/38%
+
+// .data-\[left-scroll\=true\]\:\[mask-image\:linear-gradient\(270deg\2c \#000_calc\(100\%_-_var\(--scroll-shadow-size\)\)\2c transparent\)\][data-left-scroll="true"]
+//     -webkit-mask-image: linear-gradient(-270deg, #000 calc(100% - var(--scroll-shadow-size)), transparent) !important
+//     mask-image: linear-gradient(-270deg, #000 calc(100% - var(--scroll-shadow-size)), transparent) !important
+
+// .data-\[right-scroll\=true\]\:\[mask-image\:linear-gradient\(90deg\2c \#000_calc\(100\%_-_var\(--scroll-shadow-size\)\)\2c transparent\)\][data-right-scroll="true"]
+//     -webkit-mask-image: linear-gradient(-90deg, #000 calc(100% - var(--scroll-shadow-size)), transparent)
+//     mask-image: linear-gradient(-90deg, #000 calc(100% - var(--scroll-shadow-size)), transparent)
+
+.shopping-bag-text
+    background: linear-gradient(45deg, #610C9F, #940B92, #DA0C81, #E95793)
+    background-clip: text
+    color: transparent
+    position: relative
+    text-shadow: 0 0 40px #940B92,0 0 40px #610C9F
+    top: 1pc
+svg[data-which="toman"]
+    display: inline
+    width: 34px
+    padding-right: 5px
+    max-width: max-content
+.shopping-bag-icon
+    background: linear-gradient(45deg, #610C9F, #940B92, #DA0C81, #E95793)
+    background-clip: text
+    color: transparent
+    position: relative
+    box-shadow: 0 0 40px rgba(#940B92,.3),0 0 40px rgba(#610C9F,.3)
+    &::after
+        content: ''
+        width: 100%
+        height: 100%
+        top: 0
+        left: 0
+        z-index: -1
+        position: absolute
+        background: linear-gradient(-45deg, #610C9F, #940B92, #DA0C81, #E95793)
+        opacity: .5
+        border-radius: 99px
+
+.horizontal-title-container
+    position: relative
+    &::after
+        content: ''
+        width: 100%
+        border-bottom: 1px solid rgba(150,150,150,.25)
+        position: absolute
+        right: 0
+        top: 52%
+        z-index: -1
+    p.horizontal-title
+        z-index: 9
+        text-align: center
+        position: relative
+        display: inline
+        padding: 0 2pc
+        background: #fff
+        // backdrop-filter: blur(32px)
+
+.profile-fav-btns button
+    &,&[data-pressed="true"]
+        background: linear-gradient(90deg, rgba(cyan, .15), rgba(#7C00FE,.15)) no-repeat center center
+        background-attachment: fixed !important
+        background-size: cover
+        transform: none
+    i
+        background: linear-gradient(90deg, cyan, #7C00FE) no-repeat center center
+        background-attachment: fixed !important
+        background-size: cover
+        color: transparent
+        background-clip: text
+
+.accordion span,div
+    font-size: 13px
+    line-height: 20px
+
+.item-perspective
+    width: 130px
+    perspective: 400px
+    // margin: auto
+    &+p
+        max-width: 150px
+        width: 100%
+        padding-top: .5pc
+    .svg-container
+        right: -1pc
+    .img
+        position: relative
+        z-index: 2
+        &:not(.rotate-off)
+            transform: rotateY(-45deg) scale(.75)
+        &,&+div
+            transition: .3s transform
+        & + div
+            position: absolute
+            right: 4px
+            bottom: -0.5pc
+            width: 80%
+            height: 72%
+            transform: rotate(45deg)
+            z-index: -1
+            opacity: .3
+            // background: rgba(248, 204, 71, 0.3)
+            border-radius: 100%
+
+    // &:hover
+    //     .img,.svg-container
+    //         transform: rotateY(-45deg)
+    .img,.svg-container
+        transition: .3s all
+// button i[class*='fa']
+//     padding-top: 5px
+
+.scrollable-tabs
+    display: flex
+    overflow-x: auto
+    white-space: nowrap
+    padding: 8px 0
+
+.scrollable-tabs::-webkit-scrollbar
+    height: 8px
+
+.scrollable-tabs::-webkit-scrollbar-thumb
+    background-color: rgba(0, 0, 0, 0.3)
+    border-radius: 4px
+
+.scrollable-tabs::-webkit-scrollbar-track
+    background: transparent
+
+.scrollable-tabs .nextui-tabs
+    display: inline-block
+    flex-shrink: 0
+    margin-right: 10px
+
+div[data-slot="input-wrapper"]
+    button
+        // transform: translate(-8px,4px)
+        div:has(i)
+            display: contents !important
+
+.svg-container
+    filter: url('#goo')
+    z-index: 0
+    position: absolute
+    div
+        width: 230px
+        height: 230px
+        background-color: #FFBE98
+        opacity: .1
+        z-index: 0
+        right: 0
+        position: absolute
+        clip-path: polygon(35% 24%, 57% 12%, 77% 16%, 88% 32%, 74% 61%, 49% 79%, 26% 76%, 15% 62%, 20% 41%)
+
+div[data-rsbs-overlay="true"]
+    z-index: 999999999
+
+.dark
+    .blob
+        filter: blur(50px) invert(1)
+    p.horizontal-title
+        background: #000
+    .shopping-bag-icon
+        box-shadow: 0 0 40px rgba(148, 11, 146, 1), 0 0 40px rgba(97, 12, 159, .5)
+    .shopping-bag-text
+        text-shadow: 0 0 40px #a80aa5,0 0 40px #760fc0
+    div[data-rsbs-overlay="true"]
+        div[data-rsbs-scroll="true"],div[data-rsbs-header="true"]
+            background: #222
+        div[data-rsbs-header="true"]::before
+            background-color: #eee

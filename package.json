@@ -1,0 +1,48 @@
+{
+  "name": "next_design",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@neshan-maps-platform/mapbox-gl-react": "^1.0.2",
+    "@nextui-org/react": "^2.4.8",
+    "@nextui-org/system": "^2.2.5",
+    "@nextui-org/theme": "^2.2.9",
+    "@react-aria/collections": "^3.0.0-alpha.4",
+    "@tabler/icons-react": "^3.17.0",
+    "animated-number-react": "^0.1.2",
+    "axios": "^1.7.7",
+    "boxicons": "^2.1.4",
+    "flickity": "^3.0.0",
+    "framer-motion": "^11.5.5",
+    "hammerjs": "^2.0.8",
+    "jquery": "^3.7.1",
+    "mapbox-gl": "^3.7.0",
+    "next": "14.2.7",
+    "next-view-transitions": "^0.3.2",
+    "react": "^18",
+    "react-animated-rating": "^1.2.0",
+    "react-dom": "^18",
+    "react-flickity-component": "^4.0.7",
+    "react-hot-toast": "^2.4.1",
+    "react-map-gl": "^7.1.7",
+    "react-modal-sheet": "^3.1.0",
+    "react-photo-view": "^1.2.6",
+    "react-spring-bottom-sheet": "^3.4.1",
+    "react-swipeable-views": "^0.14.0",
+    "sass": "^1.77.8",
+    "styled-components": "^6.1.13",
+    "swiper": "^11.1.11",
+    "swr": "^2.2.5",
+    "toastify-js": "^1.12.0"
+  },
+  "devDependencies": {
+    "postcss": "^8",
+    "tailwindcss": "^3.4.10"
+  }
+}
