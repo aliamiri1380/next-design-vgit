@@ -12,6 +12,8 @@ Building footer, header, sidebar with just a simple import and declaration
 - Specialized for Persian Language
 
 
+*Note that this project is still under development but still is usable*
+
 
 ## Getting Started
 
