@@ -9,6 +9,7 @@ Building footer, header, sidebar with just a simple import and declaration
 - Fast
 - Focus more on your backend development
 - Neat and editable code Structure
+- Specialized for Persian Language
 
 
 
